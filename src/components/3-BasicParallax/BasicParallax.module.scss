@@ -1,0 +1,29 @@
+.parallaxContainer {
+  height: 600px;
+  width: 100%;   
+  overflow: hidden;
+  border: solid red 2px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.backgroundDiv {
+  background: url(@/assets/nature.png);
+  //background-size: cover;
+  width: 100%;
+  height: 300%;
+  
+}
+
+.div {
+  margin-bottom: 500px;
+}
+
+.text {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+}

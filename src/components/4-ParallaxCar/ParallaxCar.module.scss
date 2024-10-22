@@ -1,0 +1,77 @@
+
+.allWrapper {
+  margin-inline: auto;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.road {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+}
+
+.carTop {
+  position: absolute;
+  bottom: 0;
+  left: 46%;
+  width: 129px;
+}
+
+.h1 {
+  margin-block: 400px;   
+}
+
+.branches {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 200%;
+}
+
+.branch1 {
+  width: 120px;
+  position: absolute;
+  left: 28px;
+  bottom: 0%;
+}
+
+.branch2 {
+  position: absolute;
+  width: 143px;
+  right: -20px;
+  bottom: 30%;
+}
+
+.branch3 {
+  position: absolute;
+  width: 108px;
+  right: 39px;
+  bottom: 5%;
+}
+
+.branch4 {
+  width: 120px;
+  position: absolute;
+  left: 38px;
+  bottom: 50%;
+}
+
+
+.branch5 {
+  position: absolute;
+  width: 108px;
+  right: 39px;
+  bottom: 75%;
+}
+
+.branch6 {
+  width: 120px;
+  position: absolute;
+  left: 44px;
+  bottom: 85%;
+}

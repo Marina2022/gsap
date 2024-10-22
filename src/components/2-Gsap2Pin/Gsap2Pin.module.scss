@@ -1,0 +1,28 @@
+.block {
+  height: 150px;
+  background-color: aliceblue;
+  text-align: center;
+  
+  &:nth-child(odd) {
+    background-color: yellowgreen;
+  }
+}
+
+.orangeBlock {
+  height: 150px;
+  background-color: mistyrose;
+}
+
+.orangeSquare {
+  background-color: orange;
+  border-radius: 5px;
+  height: 150px;
+  width: 150px;
+}
+
+.orangeSquare1 {
+  background-color: coral;
+  border-radius: 5px;
+  height: 150px;
+  width: 150px;
+}

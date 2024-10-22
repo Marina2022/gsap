@@ -1,0 +1,44 @@
+import s from './Home.module.scss'
+import {Link} from "react-router-dom";
+
+const Home = () => {
+  return (
+    <>
+      <header>
+        <div className="container">
+          <nav className={s.mainNav}>
+            <ul className={s.navList}>
+              <li>
+                <Link to="/pin">Pin problem solved</Link>
+              </li>
+              <li>
+                <Link to="/pin-2">Pin - orange square</Link>
+              </li>
+
+              <li>
+                <Link to="/parallax">Basic Parallax</Link>
+              </li>    
+              <li>
+                <Link to="/parallax-car">Parallax Car</Link>
+              </li>    
+              <li>
+                <Link to="/car-parallax">Car backgrounds parallax</Link>
+              </li>  
+              <li>
+                <Link to="/prevent-scroll">Prevent Scroll</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div className="container">
+          <div>Привет привет</div>
+        </div>
+
+      </main>
+    </>
+  );
+};
+
+export default Home;

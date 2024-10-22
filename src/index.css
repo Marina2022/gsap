@@ -1,0 +1,14 @@
+.container {
+    max-width: 1024px;
+    margin-inline: auto;
+}
+
+
+.pin-spacer {
+    /*background: aquamarine;*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
