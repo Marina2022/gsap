@@ -1,0 +1,42 @@
+.main {
+  position: relative;  
+}
+
+.par {
+  margin-block: 20px;
+}
+
+
+
+.btn {
+  background: forestgreen;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 100px;
+  right: 400px;
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  z-index: 1;
+  gap: 20px;
+  list-style: none;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  left: 0;
+  
+  li {
+    padding: 20px;
+    background: forestgreen;
+    color: white;
+  }
+}
+
+.main {
+  padding-top: 58px;
+}

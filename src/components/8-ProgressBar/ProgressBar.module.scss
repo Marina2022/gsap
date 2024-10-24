@@ -1,0 +1,62 @@
+.header {
+  height: 100px;
+  background: coral;
+  color: white;
+  width: 100%;
+  margin-block: 20px;
+  padding: 20px;
+}
+
+.progressHolder {
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: lightgoldenrodyellow 1px solid;
+}
+
+.progressWrapper {
+  padding: 20px;
+  background: white;
+  width: 500px;
+}
+
+.progressTitle {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.barBg {
+  height: 10px;
+  width: 100%;
+  background: lightgray;
+  position: relative;  
+}
+
+.bar {
+  height: 10px;
+  width: 100%;
+  transform: scaleX(0);
+  background: orangered;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.staff {
+  width: 100%;
+  background: mistyrose;
+  height: 400px;
+  margin-block: 50px ;
+}
+
+.main {
+  
+}
+
+.reserved {
+  height: 95px; 
+ }

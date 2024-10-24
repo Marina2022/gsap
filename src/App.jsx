@@ -7,6 +7,8 @@ import BasicParallax from "@/components/3-BasicParallax/BasicParallax.jsx";
 import ParallaxCar from "@/components/4-ParallaxCar/ParallaxCar.jsx";
 import CarParallax from "@/components/5-CarParallax/CarParallax.jsx";
 import PreventScroll from "@/components/6-PreventScroll/PreventScroll.jsx";
+import BackToTopBtn from "@/components/7-BackToTopBtn/BackToTopBtn.jsx";
+import ProgressBar from "@/components/8-ProgressBar/ProgressBar.jsx";
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
         <Route path='/parallax-car' element={<ParallaxCar/>}/>      
         <Route path='/car-parallax' element={<CarParallax/>}/>      
         <Route path='/prevent-scroll' element={<PreventScroll/>}/>      
+        <Route path='/back-to-top-btn' element={<BackToTopBtn/>}/>      
+        <Route path='/progress-bar' element={<ProgressBar/>}/>      
 
       </Routes>
     </Router>

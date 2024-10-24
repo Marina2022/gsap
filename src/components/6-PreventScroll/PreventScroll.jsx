@@ -2,11 +2,12 @@ import s from './PreventScroll.module.scss';
 import {useEffect, useRef} from "react";
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import {Link} from "react-router-dom";
 
 gsap.registerPlugin(GSDevTools);
 
-const getScaleFactor = (x1, y1, x2, y2, width) => {
-  const radius = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1))
+const getScaleFactor = (x1, y1, x2, y2, width) => {  
+  const radius = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1))  
   const diameter = radius * 2
   const factor = diameter / width
   return factor
@@ -77,7 +78,8 @@ const PreventScroll = () => {
   }
 
   return (
-    <div>
+    <div className={s.main}>
+      <Link className={s.homeLink} to="/">Home</Link>
 
       <div className={s.circle} ref={circleRef}></div>
 

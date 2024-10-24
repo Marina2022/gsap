@@ -57,7 +57,8 @@ const CarParallax = () => {
   }, []);
 
   return (
-    <div className="">
+    <div className={s.body}>
+    <div className="main">
       <Link className={s.homeLink} to="/">Home</Link>
 
       <div className={s.hero}>Scroll Down</div>
@@ -145,6 +146,7 @@ const CarParallax = () => {
           sollicitudin ac ante id, finibus congue urna. Vestibulum malesuada non turpis in molestie. Etiam a ullamcorper
           lorem. Vestibulum a hendrerit libero.</p>
       </div>
+    </div>
     </div>
   );
 };

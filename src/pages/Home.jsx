@@ -26,6 +26,12 @@ const Home = () => {
               </li>  
               <li>
                 <Link to="/prevent-scroll">Prevent Scroll</Link>
+              </li> 
+              <li>
+                <Link to="/back-to-top-btn">Back-to-top btn</Link>
+              </li>
+              <li>
+                <Link to="/progress-bar">Progress Bar</Link>
               </li>
             </ul>
           </nav>

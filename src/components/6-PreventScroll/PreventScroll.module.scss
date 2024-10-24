@@ -1,9 +1,11 @@
-* {
-  position: relative;
-  box-sizing: border-box;
-}
 
-body {
+
+.main {
+  
+  * {
+    position: relative;
+  }
+  
   margin: 0;
   font-family: 'Kanit', sans-serif;
   color: white;
@@ -84,5 +86,15 @@ h2 {
   display: none;
   padding: 50px;
   color: black;
-  background: white
+  background: white;
+  position: relative;
+  
+}
+
+.homeLink {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  color: white;
+  z-index: 1;
 }
