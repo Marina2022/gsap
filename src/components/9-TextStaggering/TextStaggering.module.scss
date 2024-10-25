@@ -1,0 +1,56 @@
+.content {
+  padding:5vw;
+  font-size:8vw;
+}
+
+
+.fullscreen {
+  width:100vw;
+  height:100vh;
+  color:white;
+  background:#01125C;
+}
+.dark {
+  background:#020202;
+}
+.centered {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+h3 {
+  font-weight:200;
+  font-size:clamp(28px, 6vw, 42px);
+  color:#EC407A;
+
+}
+
+.line {
+  font-weight: 200;
+  font-size: clamp(28px, 6vw, 42px);
+}
+
+
+.wrapper {
+  overflow:hidden;
+  background: #222;
+  font-family: Kanit;
+  font-size:1.6em;
+  color: white;
+  
+  
+ * {
+   position:relative;
+   box-sizing:border-box;   
+   overflow-x:hidden;
+
+ } 
+}
+
+.wrapperCl {
+  color: green;
+  font-size: 30px;
+  
+}

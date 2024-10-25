@@ -33,6 +33,9 @@ const Home = () => {
               <li>
                 <Link to="/progress-bar">Progress Bar</Link>
               </li>
+              <li>
+                <Link to="/text-staggering">Text Staggering</Link>
+              </li>
             </ul>
           </nav>
         </div>

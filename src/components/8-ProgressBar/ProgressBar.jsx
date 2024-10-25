@@ -3,13 +3,21 @@ import {Link} from "react-router-dom";
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {useEffect, useRef} from "react";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 const ProgressBar = () => {
   
   const barRef = useRef()
   const textRef = useRef()
   const progressHolderRef = useRef()
+  const endRef = useRef()
 
+  gsap.registerPlugin(ScrollToPlugin);
+  
+  let st
+  
   useEffect(() => {
+    
+       
            
     const tween = gsap.to(barRef.current, {scaleX: 1, transformOrigin: "top left", paused: true})
 
@@ -28,15 +36,35 @@ const ProgressBar = () => {
         }        
       } 
     })
+    
+    let tween2 = gsap.to(endRef.current, {
+      x: 200, scale: 1.5, duration: 1
+    })
+    
+    st = ScrollTrigger.create({
+      trigger: endRef.current,
+      start: "top 500",
+      animation: tween2,
+      pin: true,
+      scrub: true
+    })
+
+
 
   }, []);
     
+  const onBtnClick = ()=>{
+    gsap.to(window, {scrollTo: {y: st.end}})
+    
+  }
   
   return (
     <div className="container">
       <Link className={s.homeLink} to="/">Home</Link>
       <header className={s.header}>Header</header>
+      
       <main className={s.main}>
+        <button onClick={onBtnClick}>To the End</button>
         <div className={s.text} ref={textRef}>
           <p className={s.par}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto asperiores, deserunt earum
@@ -126,6 +154,10 @@ const ProgressBar = () => {
             pariatur
             provident quisquam quo rem sapiente sunt veritatis, voluptas! Dolore!
           </p>
+          <div className={s.theEnd} ref={endRef} >The end
+                      
+          </div>
+          
           <p className={s.par}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto asperiores, deserunt earum
             eligendi et facilis fugit inventore molestiae, nostrum odio pariatur qui quibusdam quo quod repellat saepe
@@ -170,6 +202,8 @@ const ProgressBar = () => {
             pariatur
             provident quisquam quo rem sapiente sunt veritatis, voluptas! Dolore!
           </p>
+
+
           <div className={s.reserved}>
             <div className={`${s.progressHolder} bottom-fixed`} ref={progressHolderRef}>
               <div className={s.progressWrapper}>
@@ -180,6 +214,8 @@ const ProgressBar = () => {
               </div>
             </div>
           </div>
+
+
         </div>
 
 

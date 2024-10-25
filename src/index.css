@@ -24,3 +24,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.line {
+    font-weight: 200;
+    font-size: clamp(28px, 6vw, 42px);
+}
