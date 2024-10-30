@@ -54,3 +54,27 @@ h3 {
   font-size: 30px;
   
 }
+
+.toSplit {
+  overflow: hidden;
+  max-width: 800px;
+  
+  div {
+    overflow: visible;
+  }
+}
+
+.quote {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: deepskyblue;
+  color: papayawhip;
+  font-size: 22px;
+}
+.quoteWrapper {
+  //border: 1px solid orange;
+}

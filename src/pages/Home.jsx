@@ -14,19 +14,18 @@ const Home = () => {
               <li>
                 <Link to="/pin-2">Pin - orange square</Link>
               </li>
-
               <li>
                 <Link to="/parallax">Basic Parallax</Link>
-              </li>    
+              </li>
               <li>
                 <Link to="/parallax-car">Parallax Car</Link>
-              </li>    
+              </li>
               <li>
                 <Link to="/car-parallax">Car backgrounds parallax</Link>
-              </li>  
+              </li>
               <li>
                 <Link to="/prevent-scroll">Prevent Scroll</Link>
-              </li> 
+              </li>
               <li>
                 <Link to="/back-to-top-btn">Back-to-top btn</Link>
               </li>
@@ -35,6 +34,21 @@ const Home = () => {
               </li>
               <li>
                 <Link to="/text-staggering">Text Staggering</Link>
+              </li>
+              <li>
+                <Link to="/rolling-headers">Rolling Headers</Link>
+              </li>
+              <li>
+                <Link to="/line-section-indicators">Line Section Indicators</Link>
+              </li>
+              <li>
+                <Link to="/line-growing">Line Growing</Link>
+              </li>
+              <li>
+                <Link to="/video">Video</Link>
+              </li>
+              <li>
+                <Link to="/draw-svg">Draw SVG</Link>
               </li>
             </ul>
           </nav>

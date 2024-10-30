@@ -1,0 +1,35 @@
+
+.blue {
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #3399ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin-inline: auto;  
+}
+
+.red {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  background: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 800px;
+  right: 500px;
+}
+
+.wrapper {
+  position: relative;
+  height: 2000px;
+  width: 100%;
+  background: lightgray;
+}

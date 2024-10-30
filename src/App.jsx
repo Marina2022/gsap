@@ -10,6 +10,11 @@ import PreventScroll from "@/components/6-PreventScroll/PreventScroll.jsx";
 import BackToTopBtn from "@/components/7-BackToTopBtn/BackToTopBtn.jsx";
 import ProgressBar from "@/components/8-ProgressBar/ProgressBar.jsx";
 import TextStaggering from "@/components/9-TextStaggering/TextStaggering.jsx";
+import RollingHeaders from "@/components/10-RollingHeaders/RollingHeaders.jsx";
+import LineSectionIndicators from "@/components/11-LineSectionIndicators/LineSectionIndicators.jsx";
+import LineGrowing from "@/components/12-LineGrowing/LineGrowing.jsx";
+import Video from "@/components/13-Video/Video.jsx";
+import DrawSvg from "@/components/14-DrawSVG/DrawSVG.jsx";
 
 function App() {
 
@@ -27,6 +32,11 @@ function App() {
         <Route path='/back-to-top-btn' element={<BackToTopBtn/>}/>      
         <Route path='/progress-bar' element={<ProgressBar/>}/>      
         <Route path='/text-staggering' element={<TextStaggering/>}/>      
+        <Route path='/rolling-headers' element={<RollingHeaders/>}/>      
+        <Route path='/line-section-indicators' element={<LineSectionIndicators/>}/>      
+        <Route path='/line-growing' element={<LineGrowing/>}/>      
+        <Route path='/video' element={<Video/>}/>      
+        <Route path='/draw-svg' element={<DrawSvg/>}/>      
 
       </Routes>
     </Router>
