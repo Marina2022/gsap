@@ -15,6 +15,7 @@ import LineSectionIndicators from "@/components/11-LineSectionIndicators/LineSec
 import LineGrowing from "@/components/12-LineGrowing/LineGrowing.jsx";
 import Video from "@/components/13-Video/Video.jsx";
 import DrawSvg from "@/components/14-DrawSVG/DrawSVG.jsx";
+import Responsive from "@/components/15-Responsive/Responsive.jsx";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <Route path='/line-growing' element={<LineGrowing/>}/>      
         <Route path='/video' element={<Video/>}/>      
         <Route path='/draw-svg' element={<DrawSvg/>}/>      
+        <Route path='/responsive' element={<Responsive/>}/>      
 
       </Routes>
     </Router>

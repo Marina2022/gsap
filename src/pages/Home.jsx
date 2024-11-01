@@ -50,6 +50,9 @@ const Home = () => {
               <li>
                 <Link to="/draw-svg">Draw SVG</Link>
               </li>
+              <li>
+                <Link to="/responsive">Responsive</Link>
+              </li>
             </ul>
           </nav>
         </div>
