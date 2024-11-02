@@ -8,6 +8,7 @@ import Splitting from 'splitting'
 
 gsap.registerPlugin(ScrollTrigger);
 
+ScrollTrigger.normalizeScroll(true);
 const TextStaggering = () => {
 
   const toSplitRef = useRef()
