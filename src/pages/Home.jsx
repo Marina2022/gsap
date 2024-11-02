@@ -1,5 +1,6 @@
 import s from './Home.module.scss'
 import {Link} from "react-router-dom";
+import SplitScreenAnimation from "@/components/SplitScreenAnimation/SplitScreenAnimation.jsx";
 
 const Home = () => {
   return (
@@ -52,6 +53,9 @@ const Home = () => {
               </li>
               <li>
                 <Link to="/responsive">Responsive</Link>
+              </li>
+              <li>
+                <Link to="/split-screen-animation">Split Screen Animation</Link>
               </li>
             </ul>
           </nav>

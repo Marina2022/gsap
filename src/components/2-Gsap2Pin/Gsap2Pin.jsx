@@ -21,7 +21,7 @@ const Gsap2Pin = () => {
       start: "top 450px",
       end: "bottom 450px",
       // end: "bottom +=300",      
-      markers: true,
+      // markers: true,
       pin: true,
       pinSpacing: true,
     })

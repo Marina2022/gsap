@@ -19,7 +19,7 @@ const BasicParallax = () => {
         end: "+=400",
         scrub: true,
         pin: true,
-        markers: true
+        // markers: true
       }
     })
 

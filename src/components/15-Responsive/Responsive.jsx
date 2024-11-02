@@ -58,8 +58,6 @@ const Responsive = () => {
 
 
       colRefs.current.forEach((colElement) => {
-
-
         const items = colElement.querySelectorAll('.item')
 
         const t2 = gsap.timeline({paused: true})

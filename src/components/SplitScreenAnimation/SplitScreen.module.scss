@@ -1,0 +1,59 @@
+.row {
+  display: flex;
+}
+
+.left {  
+  width: 50%;
+  font-size: 50px;
+  font-family: sans-serif;    
+}
+
+.text {
+  height: calc(100vh - 100px);
+  border: red 1px solid;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.right {
+  border: green 1px solid;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+
+
+.square {
+  width: 300px;
+  height: 300px;
+  background: #00bcd4;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  background: #EC407A;
+  
+}
+
+.spacer {
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+}
+
+.spacerSmall {
+  width: 100%;
+  height: 90vh;
+}
