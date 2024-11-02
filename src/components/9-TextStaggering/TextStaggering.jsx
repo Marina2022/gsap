@@ -9,6 +9,10 @@ import Splitting from 'splitting'
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.normalizeScroll(true);
+
+ScrollTrigger.config({
+  ignoreMobileResize: true
+});
 const TextStaggering = () => {
 
   const toSplitRef = useRef()
@@ -41,14 +45,6 @@ const TextStaggering = () => {
         // Теперь gsap, охохоюшки
         const divs = Array.from(toSplitRef.current.querySelectorAll('.animDiv'))
 
-        // ScrollTrigger.create({
-        //   trigger: toSplitRef.current,
-        //   start: "top 80%",
-        //   end: "bottom 80%",
-        //   markers: true,
-        //   animation: gsap.from('.animDiv', {y:100, opacity: 0, stagger: 0.1}),
-        //   toggleActions: "play none none reset"
-        // })
 
         divs.forEach(div => {
           ScrollTrigger.create({
@@ -58,7 +54,6 @@ const TextStaggering = () => {
             end: "bottom 90%",
             animation: gsap.from(div.querySelector('div'), {y: 200, opacity: 0}),
             toggleActions: "restart none none reverse",
-            // markers: true
           })
         })
       }, 300
@@ -69,7 +64,6 @@ const TextStaggering = () => {
       start: "100% bottom",
       animation: gsap.from(quoteRef.current, {scale: 0, transformOrigin: "center bottom"}),
       toggleActions: "restart none none none",
-      // markers: true
     })
 
     ScrollTrigger.create({
@@ -77,7 +71,6 @@ const TextStaggering = () => {
       start: "top 100%",
       end: "bottom 100%",
       animation: gsap.to(quoteRef.current, {scale: 0, transformOrigin: "center bottom"}),
-      // markers: true,      
       onLeaveBack: () => gsap.set(quoteRef.current, {scale: 0}),
     })
 
