@@ -1,0 +1,35 @@
+.wrapper {
+  width: 100%;  
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+  
+}
+
+.innerPart {
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  color: #EC407A;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  display: flex;
+  width: auto;
+  gap: 20px;
+  
+  @media(max-width: 800px) {
+    font-size: 50px;
+  }
+  
+}
+
+.spacer {
+  height: 90vh;
+  background: #cccccc;
+}

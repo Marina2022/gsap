@@ -16,7 +16,8 @@ import LineGrowing from "@/components/12-LineGrowing/LineGrowing.jsx";
 import Video from "@/components/13-Video/Video.jsx";
 import DrawSvg from "@/components/14-DrawSVG/DrawSVG.jsx";
 import Responsive from "@/components/15-Responsive/Responsive.jsx";
-import SplitScreenAnimation from "@/components/SplitScreenAnimation/SplitScreenAnimation.jsx";
+import SplitScreenAnimation from "@/components/16-SplitScreenAnimation/SplitScreenAnimation.jsx";
+import HorizontalScroll from "@/components/17-HorizontalScroll/HorizontalScroll.jsx";
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
         <Route path='/draw-svg' element={<DrawSvg/>}/>      
         <Route path='/responsive' element={<Responsive/>}/>      
         <Route path='/split-screen-animation' element={<SplitScreenAnimation/>}/>      
+        <Route path='/horizontal-scroll' element={<HorizontalScroll/>}/>      
 
       </Routes>
     </Router>

@@ -3,10 +3,11 @@
     margin-inline: auto;
 }
 
-
-.pin-spacer {
-    /*background: aquamarine;*/
+.container-1 {
+    width: 100%;
+    padding-inline: 100px;
 }
+
 
 * {
     box-sizing: border-box;
@@ -124,17 +125,17 @@ body {
         }
 
         .cols-2:nth-of-type(odd) {
-            flex-direction: column!important;
+            flex-direction: column !important;
         }
 
         .cols-2 .item {
             margin: 0;
-            width: 100%;            
+            width: 100%;
         }
-        
+
         .photo {
             min-height: 250px;
-        }      
+        }
     }
 
     .cols-2 .item:last-of-type {
@@ -169,4 +170,95 @@ body {
         background-image: url(https://images.pexels.com/photos/545968/pexels-photo-545968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     }
 
-} 
+}
+
+.split-screen-animation {
+    
+    background: #eef4ff;
+    font-family: sans-serif;
+    color: #333;
+
+
+    .spacer {
+        width: 100%;
+        height: 50vh;
+        background: #ddd;
+    }
+
+    .gallery h1 {
+        font-size: clamp(2em, 2.5vw, 6em);
+    }
+
+    .gallery p {
+        font-size: clamp(1.4em, 1vw, 5em);
+        line-height: 1.4;
+    }
+
+    .gallery {
+        display: flex;
+    }
+
+    .left {
+        /* outline:2px solid red; */
+        width: 50%;
+    }
+
+    .right {
+        /* outline:2px solid blue; */
+        height: 100vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .desktopContent {
+        margin: auto;
+        width: 80%;
+    }
+
+    .desktopContentSection {
+        outline:2px solid green; 
+        min-height: 100vh;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .desktopContentSection:nth-child(even) {
+        /* background:#ccc; */
+    }
+
+    .desktopPhotos {
+        width: 30vw;
+        height: 30vw;
+        margin-left: 100px;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .desktopPhoto {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .red {
+        background: crimson;
+    }
+
+    .green {
+        background: MediumSeaGreen;
+    }
+
+    .blue {
+        background: dodgerblue;
+    }
+
+    .pink {
+        background: deepPink;
+    }
+
+}
