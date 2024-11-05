@@ -19,6 +19,7 @@
   position: absolute;
   top: 0;
   left: 50px;
+  left: 0;
   display: flex;
   width: auto;
   gap: 20px;
@@ -31,5 +32,6 @@
 
 .spacer {
   height: 90vh;
-  background: #cccccc;
+  //background: #cccccc;
+  margin-bottom: 50px;
 }
