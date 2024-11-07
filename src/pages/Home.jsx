@@ -67,7 +67,7 @@ const Home = () => {
               </li>
               
               <li>
-                <Link to="/horizontal-scroll-3">Horizontal Scroll Lenis</Link>
+                <Link to="/horizontal-scroll-3">Horizontal Scroll Lenis - The King!</Link>
               </li>
               
   
