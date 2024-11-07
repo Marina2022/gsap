@@ -24,51 +24,55 @@ const LenisScroll = () => {
   useEffect(() => {
 
 
-    const tween = gsap.to(listRef.current, {
-      x: () => -1 * (listRef.current.offsetWidth - wrapperRef.current.offsetWidth),
-      ease: "none",
-    });
+     setTimeout(()=>{
+      const tween = gsap.to(listRef.current, {
+        x: () => -1 * (listRef.current.offsetWidth - wrapperRef.current.offsetWidth),
+        ease: "none",
+      });
 
-    const tween1 = gsap.to(brazilRefInner.current, {
-      scale: .5, opacity: .5, ease: "none"
-    })
-
-    const length = pathRef.current.getTotalLength();
-    
-    gsap.set(pathRef.current, {strokeDashoffset: length, strokeDasharray: length} )
-    
-    const tl = gsap.timeline({paused: true})      
-      .to(brazilRefBlue.current, {
-        scale: 2, ease: "back"
+      const tween1 = gsap.to(brazilRefInner.current, {
+        scale: .5, opacity: .5, ease: "none"
       })
-      .to(pathRef.current, {strokeDashoffset: 0, duration: .5, ease: "none"}, 0)
+
+      const length = pathRef.current.getTotalLength();
+
+      gsap.set(pathRef.current, {strokeDashoffset: length, strokeDasharray: length} )
+
+      const tl = gsap.timeline({paused: true})
+        .to(brazilRefBlue.current, {
+          scale: 2, ease: "back"
+        })
+        .to(pathRef.current, {strokeDashoffset: 0, duration: .5, ease: "none"}, 0)
+
+
+      ScrollTrigger.create({
+        trigger: listWrapperRef.current,
+        pin: true,
+        start: "top 50%",
+        end: () => "+=" + (listRef.current.offsetWidth - wrapperRef.current.offsetWidth + 60),
+        animation: tween,
+        scrub: 1,
+        invalidateOnRefresh: true,
+      });
+
+      ScrollTrigger.create({
+        trigger: brazilRef.current,
+        start: "left 50%",
+        end: "right 50%",
+        scrub: 1,
+        animation: tween1,
+
+        // будем мониторить именно этот твин, т.к. именно в нем указан наш контейнер как анимируемый элемент
+        containerAnimation: tween,
+
+        onEnter: () => tl.play(),
+        onLeave: () => tl.reverse(),
+        onEnterBack: () => tl.play(),
+        onLeaveBack: () => tl.reverse(),
+      });   
+     }, 300)
     
-
-    ScrollTrigger.create({
-      trigger: listWrapperRef.current,
-      pin: true,
-      start: "top 50%",
-      end: () => "+=" + (listRef.current.offsetWidth - wrapperRef.current.offsetWidth + 60),
-      animation: tween,
-      scrub: 1,
-      invalidateOnRefresh: true,
-    });
-
-    ScrollTrigger.create({
-      trigger: brazilRef.current,
-      start: "left 50%",
-      end: "right 50%",
-      scrub: 1,
-      animation: tween1,
-
-      // будем мониторить именно этот твин, т.к. именно в нем указан наш контейнер как анимируемый элемент
-      containerAnimation: tween,
-
-      onEnter: () => tl.play(),
-      onLeave: () => tl.reverse(),
-      onEnterBack: () => tl.play(),
-      onLeaveBack: () => tl.reverse(),
-    });
+   
 
 
     return () => {

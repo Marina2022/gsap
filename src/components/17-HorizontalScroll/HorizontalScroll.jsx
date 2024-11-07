@@ -16,13 +16,13 @@ const HorizontalScroll = () => {
   const listWrapperRef = useRef()
   const brazilRefBlue = useRef()
   const pathRef = useRef()
-
-
   const wrapperRef = useRef();
 
 
   useEffect(() => {
     window.scrollTo(0,0)
+        // Kill existing ScrollTriggers on component mount
+    // ScrollTrigger.getAll().forEach((st) => st.kill());
 
 
     const length = pathRef.current.getTotalLength();
@@ -73,8 +73,6 @@ const HorizontalScroll = () => {
       onLeaveBack: () => tl.reverse(),
     });
     
-    
-
 
     return () => {
       ScrollTrigger.getAll().forEach((st) => st.kill());
