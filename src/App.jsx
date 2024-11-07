@@ -17,12 +17,17 @@ import Video from "@/components/13-Video/Video.jsx";
 import DrawSvg from "@/components/14-DrawSVG/DrawSVG.jsx";
 import Responsive from "@/components/15-Responsive/Responsive.jsx";
 import SplitScreenAnimation from "@/components/16-SplitScreenAnimation/SplitScreenAnimation.jsx";
+import HorizontalScrollPage from "@/components/17-HorizontalScroll/HorizontalScrollPage.jsx";
 import HorizontalScroll from "@/components/17-HorizontalScroll/HorizontalScroll.jsx";
+import HorizontalScroll1 from "@/components/18-Try/HorizontalScroll1.jsx";
+import MainLayout from "@/components/19-Try-Normas/MainLayout.jsx";
+import Comp from "@/components/19-Try-Normas/Comp.jsx";
+import LenisScroll from "@/components/20-LenisScroll/LenisScroll.jsx";
+import RootLenis from "@/components/20-LenisScroll/RootLenis.jsx";
 
 function App() {
 
-  return (
-
+  return (    
     <Router>
       <Routes>
         <Route path='/' index element={<Home/>}/>
@@ -42,12 +47,12 @@ function App() {
         <Route path='/draw-svg' element={<DrawSvg/>}/>      
         <Route path='/responsive' element={<Responsive/>}/>      
         <Route path='/split-screen-animation' element={<SplitScreenAnimation/>}/>      
-        <Route path='/horizontal-scroll' element={<HorizontalScroll/>}/>      
-
+        <Route path='/horizontal-scroll' element={<HorizontalScroll />}/>      
+        <Route path='/horizontal-scroll-1' element={<HorizontalScroll1/>}/>      
+        <Route path='/horizontal-scroll-2' element={<MainLayout/>}/>      
+        <Route path='/horizontal-scroll-3' element={<RootLenis/>}/>      
       </Routes>
     </Router>
-
-
   )
 }
 

@@ -1,4 +1,4 @@
-import s from './HorizontalScroll.module.scss';
+import s from '../17-HorizontalScroll/HorizontalScroll.module.scss'
 import {Link} from "react-router-dom";
 import {useEffect, useRef} from "react";
 import {gsap} from 'gsap';
@@ -8,7 +8,7 @@ import useMobileScreen from "@/hooks/useMobileScreen.js";
 gsap.registerPlugin(ScrollTrigger);
 
 
-const HorizontalScroll = () => {
+const LenisScroll = () => {
   const listRef = useRef();
   const brazilRef = useRef();
   const brazilRefInner = useRef();
@@ -146,4 +146,4 @@ const HorizontalScroll = () => {
   );
 };
 
-export default HorizontalScroll;
+export default LenisScroll;

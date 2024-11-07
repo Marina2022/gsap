@@ -262,3 +262,37 @@ body {
     }
 
 }
+
+
+.chatCPTScroll {
+    & body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    & [data-scroll-container] {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .wrapper {
+        display: flex;
+        width: 200vw; /* Или ширина, необходимая для элементов */
+        border: 1px solid red;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &  li {
+        width: 100vw; /* Или ширина, необходимая для элементов */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+    }
+
+}

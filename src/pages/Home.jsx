@@ -1,6 +1,5 @@
 import s from './Home.module.scss'
 import {Link} from "react-router-dom";
-import SplitScreenAnimation from "@/components/16-SplitScreenAnimation/SplitScreenAnimation.jsx";
 
 const Home = () => {
   return (
@@ -60,6 +59,18 @@ const Home = () => {
               <li>
                 <Link to="/horizontal-scroll">Horizontal Scroll</Link>
               </li>
+              <li>
+                <Link to="/horizontal-scroll-1">Horizontal Scroll Hook</Link>
+              </li>
+              <li>
+                <Link to="/horizontal-scroll-2">Horizontal Scroll Proxy</Link>
+              </li>
+              
+              <li>
+                <Link to="/horizontal-scroll-3">Horizontal Scroll Lenis</Link>
+              </li>
+              
+  
             </ul>
           </nav>
         </div>
