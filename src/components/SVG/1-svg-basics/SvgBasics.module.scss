@@ -1,0 +1,46 @@
+.wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;  
+}
+
+.svgEl {
+  background: #00bcd4;
+  margin-right: 40px;
+}
+
+
+.polygon {
+  stroke: rgb(0, 125, 0);
+  width: 500px;
+  max-width: 90vw;
+  border: #EC407A 1px solid;
+}
+
+
+.svgBook {
+  stroke: rgb(255, 0, 238); 
+  stroke-width: 3px;
+  fill: none;
+}
+
+.monster {
+  width: 400px;
+  height: 400px;
+  fill: none;
+  stroke: #EC407A;
+  stroke-width: 5px;
+}
+
+.pink {
+  fill: rgb(136, 248, 236);
+}
+
+.blue {
+  fill: rgba(246, 82, 193, 0.494);
+}
+
+.boxes {
+  border: 1px solid gray;
+  width: 400px;
+  height: 400px;
+}

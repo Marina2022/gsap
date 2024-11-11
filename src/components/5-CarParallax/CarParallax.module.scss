@@ -7,15 +7,14 @@
 
   .body {
 
+    position: relative;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    background: #263238;
+    
     & * {
       position: relative;
     }
-
-    position: relative;
-    
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: white;    
-    background: #263238;
   }
 
   .banner {

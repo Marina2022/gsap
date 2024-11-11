@@ -4,8 +4,10 @@ import {Link} from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <header>
+      <header className={s.header}>
         <div className="container">
+          <Link to="/svg">Svg</Link>
+          
           <nav className={s.mainNav}>
             <ul className={s.navList}>
               <li>
@@ -68,14 +70,12 @@ const Home = () => {
               
               <li>
                 <Link to="/horizontal-scroll-3">Horizontal Scroll Lenis - The King!</Link>
-              </li>
-              
-  
-            </ul>
+              </li>             
+              </ul>
           </nav>
         </div>
       </header>
-      <main>
+      <main className={s.main}>
         <div className="container">
           <div>Привет привет</div>
         </div>

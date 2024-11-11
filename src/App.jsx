@@ -24,6 +24,9 @@ import MainLayout from "@/components/19-Try-Normas/MainLayout.jsx";
 import Comp from "@/components/19-Try-Normas/Comp.jsx";
 import LenisScroll from "@/components/20-LenisScroll/LenisScroll.jsx";
 import RootLenis from "@/components/20-LenisScroll/RootLenis.jsx";
+import Svg from "@/pages/Svg.jsx";
+import SvgBasics from "@/components/SVG/1-svg-basics/SvgBasics.jsx";
+import Text from "@/components/SVG/2-text/Text.jsx";
 
 function App() {
 
@@ -51,6 +54,9 @@ function App() {
         <Route path='/horizontal-scroll-1' element={<HorizontalScroll1/>}/>      
         <Route path='/horizontal-scroll-2' element={<MainLayout/>}/>      
         <Route path='/horizontal-scroll-3' element={<RootLenis/>}/>      
+        <Route path='/svg' element={<Svg/>}/>      
+        <Route path='/svg-basics' element={<SvgBasics/>}/>      
+        <Route path='/svg-text' element={<Text/>}/>      
       </Routes>
     </Router>
   )
