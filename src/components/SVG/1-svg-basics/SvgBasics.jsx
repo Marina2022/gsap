@@ -54,7 +54,7 @@ const SvgBasics = () => {
       })
 
 
-    GSDevTools.create()
+    // GSDevTools.create()
 
     t2.play()
 
