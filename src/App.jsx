@@ -27,6 +27,7 @@ import RootLenis from "@/components/20-LenisScroll/RootLenis.jsx";
 import Svg from "@/pages/Svg.jsx";
 import SvgBasics from "@/components/SVG/1-svg-basics/SvgBasics.jsx";
 import Text from "@/components/SVG/2-text/Text.jsx";
+import Characters from "@/components/SVG/3-Characters/Characters.jsx";
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
         <Route path='/svg' element={<Svg/>}/>      
         <Route path='/svg-basics' element={<SvgBasics/>}/>      
         <Route path='/svg-text' element={<Text/>}/>      
+        <Route path='/svg-characters' element={<Characters/>}/>      
       </Routes>
     </Router>
   )

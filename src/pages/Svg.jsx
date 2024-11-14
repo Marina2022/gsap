@@ -13,6 +13,9 @@ const Svg = () => {
               </li>    
               <li>
                 <Link to="/svg-text">Text</Link>
+              </li>      
+              <li>
+                <Link to="/svg-characters">SVG Characters</Link>
               </li>              
             </ul>
           </nav>

@@ -1,5 +1,5 @@
-@import
-url(https://fonts.googleapis.com/css2?family=Bungee%3Aital%2Cwght%400%2C400&amp;display=block);
+//@import
+//url(https://fonts.googleapis.com/css2?family=Bungee%3Aital%2Cwght%400%2C400&amp;display=block);
 
 
 .wrapper {
@@ -8,24 +8,42 @@ url(https://fonts.googleapis.com/css2?family=Bungee%3Aital%2Cwght%400%2C400&amp;
   align-items: center;
   height: 100vh;
   overflow: hidden;
+ 
+}
+
+.wrap {
+  position: relative;
 }
 
 .svg {
-  border: 1px solid red;
   object-fit: contain;
   display: block;
 }
 
-textVisible {
+.svgText {  
+  height: auto;
   fill: rgb(51, 51, 51);
   font-family: Bungee;
   font-size: 110.21px;
   line-height: 176.337px;
   word-spacing: 1.3px;
   white-space: pre;
-  transform: matrix(0.647557, 0, 0, 0.635149, 76.170242, 21.320654);  
+  fill: #fdf8f8;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.hidden {
-  opacity: 0;
+
+.house {
+  fill: none;
+  stroke: #EC407A;
+  stroke-width: 20px;
+}
+
+.line {
+  stroke: #EC407A;
+  stroke-width: 20px;
+  stroke-linecap: square;
 }

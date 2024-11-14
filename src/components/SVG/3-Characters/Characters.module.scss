@@ -1,0 +1,85 @@
+
+.wrapper {
+  padding: 40px;
+}
+
+.rect {
+  stroke: rgb(217, 73, 73);
+  fill: rgb(235, 125, 51);
+}
+
+.text {
+  fill: rgb(253, 248, 248);
+  font-family: "Baloo 2";
+  font-size: 80px;
+  font-weight: 900;
+  white-space: pre;
+}
+
+.pathTextWrapper {
+  margin-top: 30px;
+}
+
+.pathTextSvt {
+  background: lightyellow;
+  fill: rgb(51, 51, 51);
+  font-family: "Aoboshi One";
+  font-size: 45px;
+  white-space: pre;
+}
+
+
+.experimentalWrapper {
+  margin-top: 20px;
+  border: #747bff 2px solid;
+
+}
+
+.svggg {
+  background: #f2fddf;
+  display: block;
+  height: 100px;
+  width: 100%;
+}
+
+
+.dashedLine {
+  fill: rgb(216, 216, 216);
+  stroke: rgb(0, 0, 0);
+  stroke-width: 6px;
+  stroke-dasharray: 20;
+}
+
+.pinkLine {
+  fill: rgb(216, 216, 216);
+  stroke-linecap: round;
+  stroke: rgb(236, 14, 211);
+  stroke-width: 5px;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+}
+
+.pinkLineSvg {
+  display: block;
+  margin-bottom: 500px;
+  
+}
+
+.rectangle {
+  margin-block: 30px;
+  
+  & svg {
+    stroke-width: 5px;
+    stroke: #EC407A;
+    fill: none;
+    stroke-dashoffset: 2000;
+    stroke-dasharray: 2000;
+    stroke-linecap: square;
+  }
+}
+
+.starSVG {
+  stroke: #EC407A;
+  fill: none;
+  stroke-width: 3px;
+}
