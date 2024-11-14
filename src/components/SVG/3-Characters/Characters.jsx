@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const Characters = () => {
 
-    gsap.registerPlugin(GSDevTools)
+    // gsap.registerPlugin(GSDevTools)
 
 
     const lettersRef = useRef([])
