@@ -64,7 +64,7 @@ const JellyMenu = () => {
         .to(lineRef.current,
           {
             attr: {
-              c2: cx
+              x2: cx
             }, ease: "elastic"
           }, "-=0.1")
     }
