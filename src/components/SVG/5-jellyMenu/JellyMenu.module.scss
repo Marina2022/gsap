@@ -13,6 +13,18 @@
   & ellipse {
     fill: skyblue;
     cursor: pointer;
-    
   }
+}
+
+.wireLine {
+  fill: rgb(216, 216, 216);
+  stroke-width: 6px;
+  stroke: rgb(205, 43, 192);
+  fill: none;
+}
+
+.wireBall {
+  stroke: rgb(216, 20, 216);
+  stroke-width: 6px;
+  fill: rgb(105, 16, 102);
 }
