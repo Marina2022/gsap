@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const DrawSVGAha = () => {
 
-    gsap.registerPlugin(GSDevTools)
+    // gsap.registerPlugin(GSDevTools)
 
     const rectRef = useRef()
     const lineRef = useRef()
@@ -13,7 +13,7 @@ const DrawSVGAha = () => {
 
     useEffect(() => {
 
-        GSDevTools.create()
+        // GSDevTools.create()
 
 
         const spiralLength = rectRef.current.getTotalLength()
