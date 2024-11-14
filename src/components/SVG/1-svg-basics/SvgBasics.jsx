@@ -11,7 +11,7 @@ const SvgBasics = () => {
   const boxesRef = useRef()
 
 
-  gsap.registerPlugin(GSDevTools)
+  // gsap.registerPlugin(GSDevTools)
 
   useEffect(() => {
 

@@ -16,6 +16,12 @@ const Svg = () => {
               </li>      
               <li>
                 <Link to="/svg-characters">SVG Characters</Link>
+              </li>        
+              <li>
+                <Link to="/Draw-SVG-Aha">Draw SVG aha</Link>
+              </li>         
+              <li>
+                <Link to="/JellyMenu">Jelly Menu</Link>
               </li>              
             </ul>
           </nav>

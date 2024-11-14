@@ -1,0 +1,18 @@
+.wrapper {
+  margin-block: 20px;
+}
+
+.line {
+  stroke: darkblue;
+  stroke-linecap: round;
+  stroke-width: 50px;
+}
+
+.menu {
+
+  & ellipse {
+    fill: skyblue;
+    cursor: pointer;
+    
+  }
+}

@@ -10,7 +10,7 @@ const Text = () => {
   const houseRef = useRef([])
 
 
-  gsap.registerPlugin(GSDevTools)
+  // gsap.registerPlugin(GSDevTools)
 
   const setRef = (el) => {
     circleRefs.current && !circleRefs.current.includes(el) && circleRefs.current.push(el)

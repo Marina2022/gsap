@@ -28,6 +28,8 @@ import Svg from "@/pages/Svg.jsx";
 import SvgBasics from "@/components/SVG/1-svg-basics/SvgBasics.jsx";
 import Text from "@/components/SVG/2-text/Text.jsx";
 import Characters from "@/components/SVG/3-Characters/Characters.jsx";
+import DrawSVGAha from "@/components/SVG/4-DrawSVGAha/DrawSVGAha.jsx";
+import JellyMenu from "@/components/SVG/5-jellyMenu/JellyMenu.jsx";
 
 function App() {
 
@@ -59,6 +61,8 @@ function App() {
         <Route path='/svg-basics' element={<SvgBasics/>}/>      
         <Route path='/svg-text' element={<Text/>}/>      
         <Route path='/svg-characters' element={<Characters/>}/>      
+        <Route path='/Draw-SVG-Aha' element={<DrawSVGAha/>}/>      
+        <Route path='/JellyMenu' element={<JellyMenu/>}/>      
       </Routes>
     </Router>
   )
