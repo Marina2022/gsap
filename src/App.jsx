@@ -31,6 +31,7 @@ import Characters from "@/components/SVG/3-Characters/Characters.jsx";
 import DrawSVGAha from "@/components/SVG/4-DrawSVGAha/DrawSVGAha.jsx";
 import JellyMenu from "@/components/SVG/5-jellyMenu/JellyMenu.jsx";
 import ClipPath from "@/components/SVG/6-ClipPath/ClipPath.jsx";
+import Masks from "@/components/SVG/7-Masks/Masks.jsx";
 
 function App() {
 
@@ -65,6 +66,7 @@ function App() {
         <Route path='/Draw-SVG-Aha' element={<DrawSVGAha/>}/>      
         <Route path='/JellyMenu' element={<JellyMenu/>}/>      
         <Route path='/ClipPath' element={<ClipPath/>}/>      
+        <Route path='/Masks' element={<Masks/>}/>      
       </Routes>
     </Router>
   )

@@ -25,6 +25,9 @@ const Svg = () => {
               </li>           
               <li>
                 <Link to="/ClipPath">Clip Path</Link>
+              </li>          
+              <li>
+                <Link to="/Masks">Masks</Link>
               </li>              
             </ul>
           </nav>
