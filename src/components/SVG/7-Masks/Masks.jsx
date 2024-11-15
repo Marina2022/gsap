@@ -5,17 +5,15 @@ import {Link} from "react-router-dom";
 
 const Masks = () => {
 
-    gsap.registerPlugin(GSDevTools)
-
+    // gsap.registerPlugin(GSDevTools)
 
     const maskRectRef = useRef()
-    const gradRef = useRef()
     const svgRef = useRef()
     const textRefTwo = useRef()
 
     useEffect(() => {
 
-        GSDevTools.create()
+        // GSDevTools.create()
 
       }, []
     )
