@@ -22,6 +22,9 @@ const Svg = () => {
               </li>         
               <li>
                 <Link to="/JellyMenu">Jelly Menu</Link>
+              </li>           
+              <li>
+                <Link to="/ClipPath">Clip Path</Link>
               </li>              
             </ul>
           </nav>

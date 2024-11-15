@@ -1,0 +1,48 @@
+.wrapper {
+  margin-top: 100px;
+  position: relative;
+}
+
+.imgWrapper {
+  position: relative;
+}
+
+.svg {
+
+  position: absolute;
+
+  & circle {
+    fill: none;
+    stroke: red;
+    strokeWidth: 20px
+  }
+}
+
+.img {
+  left: 0;
+  top: 0;
+}
+
+.imgWrapper {
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+
+.innerDiv {
+  background: url(@/assets/nature-clip.png);
+  background-size: cover;
+  position: absolute;
+  top: -250px;
+  left: -600px;
+  width: 150%;
+  height: 150%;
+  min-height: 500px;
+  
+  @media (max-width: 600px) {
+    width: 250%;
+    height: 250%;
+    left: -100px;
+  }
+}
