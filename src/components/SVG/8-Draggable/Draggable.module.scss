@@ -1,0 +1,35 @@
+.wrapper {
+  margin-top: 20px;
+  
+  
+}
+
+.lion {
+  position: absolute;
+}
+
+.grayLion {
+  position: absolute;
+  filter: grayscale(1);
+}
+
+.draggerSvg {
+  position: absolute;
+  z-index: 1;
+  fill: none;
+  
+}
+
+.dragger {
+  fill: none;
+  
+  stroke-width: 5px;
+}
+
+.imgWrapper {
+  position: relative;
+  overflow: hidden;
+  mask: url(#circleMask);
+  width: 500px;
+  height: 500px;
+}

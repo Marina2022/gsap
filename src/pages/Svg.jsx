@@ -1,5 +1,6 @@
 import s from './Home.module.scss'
 import {Link} from "react-router-dom";
+import Draggable from "@/components/SVG/8-Draggable/Draggable.jsx";
 
 const Svg = () => {
   return (
@@ -28,6 +29,9 @@ const Svg = () => {
               </li>          
               <li>
                 <Link to="/Masks">Masks</Link>
+              </li>        
+              <li>
+                <Link to="/Draggable">Draggable</Link>
               </li>              
             </ul>
           </nav>

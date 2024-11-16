@@ -32,6 +32,7 @@ import DrawSVGAha from "@/components/SVG/4-DrawSVGAha/DrawSVGAha.jsx";
 import JellyMenu from "@/components/SVG/5-jellyMenu/JellyMenu.jsx";
 import ClipPath from "@/components/SVG/6-ClipPath/ClipPath.jsx";
 import Masks from "@/components/SVG/7-Masks/Masks.jsx";
+import DraggableComp from "@/components/SVG/8-Draggable/Draggable.jsx";
 
 function App() {
 
@@ -67,6 +68,7 @@ function App() {
         <Route path='/JellyMenu' element={<JellyMenu/>}/>      
         <Route path='/ClipPath' element={<ClipPath/>}/>      
         <Route path='/Masks' element={<Masks/>}/>      
+        <Route path='/Draggable' element={<DraggableComp/>}/>      
       </Routes>
     </Router>
   )
