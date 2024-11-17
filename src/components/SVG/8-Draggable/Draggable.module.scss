@@ -1,7 +1,7 @@
 .wrapper {
   margin-top: 20px;
-  
-  
+
+
 }
 
 .lion {
@@ -17,12 +17,12 @@
   position: absolute;
   z-index: 1;
   fill: none;
-  
+
 }
 
 .dragger {
   fill: none;
-  
+
   stroke-width: 5px;
 }
 
@@ -32,4 +32,21 @@
   mask: url(#circleMask);
   width: 500px;
   height: 500px;
+}
+
+.warpWrapper {
+  margin-top: 20px;
+}
+
+.rectWarp {
+  fill: rgb(216, 216, 216);
+  stroke: rgb(0, 0, 0);
+  filter: url(#warp-filter-0);
+}
+
+.title {
+  filter: url(#warp-filter-0);
+  font-weight: 600;
+  font-size: 100px;
+  font-family: sans-serif;
 }

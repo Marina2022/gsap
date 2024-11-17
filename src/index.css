@@ -345,3 +345,53 @@ body {
         fill: #991617;
     }
 }
+
+
+.goo {
+
+    .demo {
+        height: 500px;
+        width:100%;
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        filter:url(#goo);
+    }
+
+    .circle {
+        width:20vmin;
+        height:20vmin;
+        border-radius:50%;
+        background:blue;
+    }
+
+    .square {
+        width:20vmin;
+        height:20vmin;
+        background:red;
+    }
+
+    .box {
+        width:50vmin;
+        height:50vmin;
+        background:dodgerblue;
+    }
+
+    .draggables {
+        transform:translateY(-50%);
+        width:50vw;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .drag {
+        touch-action: none;        
+    }
+
+    /* .square, .circle {
+        background:dodgerblue;
+    } */
+}
