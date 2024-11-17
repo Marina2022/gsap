@@ -387,10 +387,7 @@ body {
         justify-content:center;
     }
     
-    .drag {
-        touch-action: none;        
-    }
-
+   
     /* .square, .circle {
         background:dodgerblue;
     } */
